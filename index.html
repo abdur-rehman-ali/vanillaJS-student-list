@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <title>Contact List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter details of person</h1>
+    
+        <form id="submit_form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" />
+            </div>
+            <div class="form-group">
+                <label for="reg_no">Registration No</label>
+                <input type="text" class="form-control" id="reg_no"  placeholder="Enter registration number" />
+            </div>
+            <div class="form-group">
+                <label for="contact_no">Contact No</label>
+                <input type="text" class="form-control" id="contact_no" placeholder="Enter contact no" />
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession</label>
+                <input type="text" class="form-control" id="profession" placeholder="Enter profession" />
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block mt-5 mb-5" id="submit_btn">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>List of students</h1>
+        <table class="table" id="output_table">
+            <thead>
+                <tr>
+                    <th>Reg#</th>
+                    <th>Name</th>
+                    <th>Contact no</th>
+                    <th>Profession</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="output_table_body">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
